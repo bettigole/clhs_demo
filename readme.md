@@ -1,10 +1,3 @@
----
-title: "CLHS for Soil Sampling"
-output:
-  html_notebook: default
-  pdf_document: default
----
-
 This script is designed to walk you through the process of creating a raster stack to pass to the clhs() function, optimizing sample design based on landscape condition
 
 In this example, four raster bands are used, but this could be more or less depending on your preferences
