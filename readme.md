@@ -49,7 +49,7 @@ plot(clhs_carbon,add=T)
 
 Save the shapefile to your desired location and plug it into your favorite sampling app!
 ```{r}
-writeOGR(clhs_carbon, ".", "filename", 
+writeOGR(clhs_carbon, ".", "clhs_output", 
            driver = "ESRI Shapefile",
          overwrite_layer = TRUE)
 ```
