@@ -13,15 +13,15 @@ library(clhs)
 
 Read in your boundary shapefile for the property
 ```{r}
-bound = readOGR('lock_07_bounds_p.shp')
+bound = readOGR('./data/lock_07_bounds_p.shp')
 fieldCRS <- proj4string(bound)
 ```
 
 Read in four raster layers and crop to the boundary
 ```{r}
-Aspect <- raster('lock_07_aspect_p.tif')%>%crop(bound)
-NDVI <- raster('lock_07_ndvi_p.tif')%>%crop(bound)
-Slope <- raster('lock_07_slope_p.tif')%>%crop(bound)
+Aspect <- raster('./data/lock_07_aspect_p.tif')%>%crop(bound)
+NDVI <- raster('./data/lock_07_ndvi_p.tif')%>%crop(bound)
+Slope <- raster('./data/lock_07_slope_p.tif')%>%crop(bound)
 ```
 
 Just in case, align/project your rasters
