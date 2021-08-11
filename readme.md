@@ -5,9 +5,7 @@ In this example, four raster bands are used, but this could be more or less depe
 ```{r}
 library(rgdal)
 library(raster)
-library(sf)
 library(tidyverse)
-library(sp)
 library(clhs)
 ```
 
