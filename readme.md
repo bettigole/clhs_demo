@@ -16,7 +16,7 @@ bound = readOGR('./data/lock_07_bounds_p.shp')
 fieldCRS <- proj4string(bound)
 ```
 
-Read in four raster layers and crop to the boundary
+Read in three raster layers and crop to the boundary
 ```{r}
 Aspect <- raster('./data/lock_07_aspect_p.tif')%>%crop(bound)
 NDVI <- raster('./data/lock_07_ndvi_p.tif')%>%crop(bound)
