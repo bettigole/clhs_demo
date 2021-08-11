@@ -6,6 +6,7 @@ In this example, four raster bands are used, but this could be more or less depe
 library(rgdal)
 library(raster)
 library(tidyverse)
+library(sp)
 library(clhs)
 ```
 
